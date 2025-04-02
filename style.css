@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Playfair Display", serif;
+}
+
+/* Background Image */
+.imgpage {
+    background-image: url(./photo/logoimg.jpg); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+.Header {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.HeaderText {
+    font-family: "Great Vibes", serif;
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+
+/* Navigation */
+.Nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btnHome,.nav-btnMenu,.nav-btnCont {
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+    transition: color 0.3s ease;
+}
+
+.nav-btnHome:hover,.nav-btnMenu:hover,.nav-btnCont:hover {
+    color: goldenrod;
+}
+
+/* Center Text */
+.CenterText {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.CenterRes {
+    font-family: "Great Vibes", serif;
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+
+/* Footer */
+.footer1 {
+    font-family: "Great Vibes", serif;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0%;
+    bottom: 0;
+    width: 100%;
+}
+/* Add to the bottom of style.css */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .Header {
+      flex-direction: column;
+      height: auto;
+      padding: 15px 5%;
+    }
+  
+    .HeaderText {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  
+    .Nav {
+      width: 100%;
+      justify-content: space-around;
+      gap: 10px;
+    }
+  
+    /* Center text adjustments */
+    .CenterText {
+      top: 30%;
+      left: 5%;
+      right: 5%;
+      width: 90%;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .CenterRes {
+      font-size: 2rem;
+    }
+  
+    /* Footer adjustments */
+    .footer1 {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  }
